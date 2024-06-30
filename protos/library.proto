@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package library;
+
+//Defining Book message
+message Book{
+    string title = 1;
+    string author = 2;
+    string bid = 3;
+}
+
+//CRUD Operations
+service LibraryService{
+
+    //Create a new Book
+    rpc CreateBook (CreateBookRequest) returns (CreateBookRequest);
+
+    //Fetching Book with id
+    rpc GetBook (GetBookRequest) returns (Book);
+
+    //Update Book
+    rpc UpdateBook(UpdateBookRequest) returns (Book);
+
+    //Delete a Book with id
+    rpc DeleteBook(DeleteBookRequest) returns (DeleteResponse);
+
+    //List the Books
+    rpc ListBooks(ListBooksRequest) returns (ListBooksResponse);
+
+}
+
+//Messages for CRUD operations 
+
+message CreateBookRequest {
+    Book book = 1;
+}
+
+message CreateBookResponse {
+    Book book = 1;
+}
+
+message GetBookRequest{
+    string id = 1;
+}
+
+message UpdateBookRequest{
+    string id = 1; //id of book to update
+    Book book = 2; // updated book details
+}
+
+message DeleteBookRequest{
+    string id = 1;
+}
+
+message DeleteResponse{
+    bool success = 1;
+}
+
+message ListBooksResponse{
+    repeated Book books = 1;
+}
+
+message ListBooksRequest{
+}
