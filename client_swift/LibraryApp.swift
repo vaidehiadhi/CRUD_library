@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct LibraryApp: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct LibraryApp: App {
+    @StateObject private var viewModel = LibraryViewModel()
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environmentObject(viewModel)
+        }
+        .windowStyle(HiddenTitleBarWindowStyle())
+        .windowToolbarStyle(UnifiedCompactWindowToolbarStyle())
     }
 }
 
-#Preview {
-    LibraryApp()
-}
