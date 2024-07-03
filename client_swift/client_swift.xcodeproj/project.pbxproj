@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F8457EA72C32DE4F0015B0BE /* LibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8457EA62C32DE4F0015B0BE /* LibraryApp.swift */; };
+		F89B2F362C340BFD002BA1FA /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89B2F352C340BFD002BA1FA /* LibraryViewModel.swift */; };
+		F89B2F382C340C32002BA1FA /* LibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89B2F372C340C32002BA1FA /* LibraryApp.swift */; };
 		F8B022A02C32BEA2003E4235 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B0229F2C32BEA2003E4235 /* ContentView.swift */; };
 		F8CCE92A2C2F0ABE00D456B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CCE9292C2F0ABE00D456B4 /* Assets.xcassets */; };
 		F8CCE92D2C2F0ABE00D456B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CCE92C2C2F0ABE00D456B4 /* Preview Assets.xcassets */; };
@@ -20,8 +21,6 @@
 		F8CCE9592C2F112700D456B4 /* library.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCE9572C2F112700D456B4 /* library.pb.swift */; };
 		F8CCE95B2C2F134900D456B4 /* library_client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCE95A2C2F134900D456B4 /* library_client.swift */; };
 		F8CCE95D2C2FDAF400D456B4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCE95C2C2FDAF400D456B4 /* main.swift */; };
-		F8CCE9C62C319C9D00D456B4 /* library_view_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCE9C52C319C9D00D456B4 /* library_view_model.swift */; };
-		F8CCE9C82C319CB600D456B4 /* library_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCE9C72C319CB600D456B4 /* library_view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F8457EA62C32DE4F0015B0BE /* LibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryApp.swift; sourceTree = "<group>"; };
+		F89B2F352C340BFD002BA1FA /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		F89B2F372C340C32002BA1FA /* LibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryApp.swift; sourceTree = "<group>"; };
 		F8B0229F2C32BEA2003E4235 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8CCE9222C2F0ABC00D456B4 /* client_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = client_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CCE9252C2F0ABC00D456B4 /* client_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = client_swiftApp.swift; sourceTree = "<group>"; };
@@ -61,8 +61,6 @@
 		F8CCE95A2C2F134900D456B4 /* library_client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = library_client.swift; sourceTree = "<group>"; };
 		F8CCE95C2C2FDAF400D456B4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F8CCE9BD2C319C6200D456B4 /* client-swift-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client-swift-Info.plist"; sourceTree = "<group>"; };
-		F8CCE9C52C319C9D00D456B4 /* library_view_model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = library_view_model.swift; sourceTree = "<group>"; };
-		F8CCE9C72C319CB600D456B4 /* library_view.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = library_view.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +92,9 @@
 		F8CCE9192C2F0ABC00D456B4 = {
 			isa = PBXGroup;
 			children = (
-				F8457EA62C32DE4F0015B0BE /* LibraryApp.swift */,
+				F89B2F372C340C32002BA1FA /* LibraryApp.swift */,
+				F89B2F352C340BFD002BA1FA /* LibraryViewModel.swift */,
 				F8B0229F2C32BEA2003E4235 /* ContentView.swift */,
-				F8CCE9C72C319CB600D456B4 /* library_view.swift */,
-				F8CCE9C52C319C9D00D456B4 /* library_view_model.swift */,
 				F8CCE9BD2C319C6200D456B4 /* client-swift-Info.plist */,
 				F8CCE95C2C2FDAF400D456B4 /* main.swift */,
 				F8CCE95A2C2F134900D456B4 /* library_client.swift */,
@@ -302,13 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8CCE9C62C319C9D00D456B4 /* library_view_model.swift in Sources */,
+				F89B2F362C340BFD002BA1FA /* LibraryViewModel.swift in Sources */,
+				F89B2F382C340C32002BA1FA /* LibraryApp.swift in Sources */,
 				F8CCE95B2C2F134900D456B4 /* library_client.swift in Sources */,
-				F8CCE9C82C319CB600D456B4 /* library_view.swift in Sources */,
 				F8CCE95D2C2FDAF400D456B4 /* main.swift in Sources */,
 				F8B022A02C32BEA2003E4235 /* ContentView.swift in Sources */,
 				F8CCE9582C2F112700D456B4 /* library.grpc.swift in Sources */,
-				F8457EA72C32DE4F0015B0BE /* LibraryApp.swift in Sources */,
 				F8CCE9522C2F0D2E00D456B4 /* grpc_client.swift in Sources */,
 				F8CCE9592C2F112700D456B4 /* library.pb.swift in Sources */,
 			);
@@ -486,8 +482,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LibraryApp.client-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -512,8 +511,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LibraryApp.client-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
