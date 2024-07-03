@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F89B2F362C340BFD002BA1FA /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89B2F352C340BFD002BA1FA /* LibraryViewModel.swift */; };
-		F89B2F382C340C32002BA1FA /* LibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89B2F372C340C32002BA1FA /* LibraryApp.swift */; };
-		F8B022A02C32BEA2003E4235 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B0229F2C32BEA2003E4235 /* ContentView.swift */; };
 		F8CCE92A2C2F0ABE00D456B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CCE9292C2F0ABE00D456B4 /* Assets.xcassets */; };
 		F8CCE92D2C2F0ABE00D456B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CCE92C2C2F0ABE00D456B4 /* Preview Assets.xcassets */; };
 		F8CCE9382C2F0ABE00D456B4 /* client_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCE9372C2F0ABE00D456B4 /* client_swiftTests.swift */; };
@@ -41,9 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F89B2F352C340BFD002BA1FA /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
-		F89B2F372C340C32002BA1FA /* LibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryApp.swift; sourceTree = "<group>"; };
-		F8B0229F2C32BEA2003E4235 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8CCE9222C2F0ABC00D456B4 /* client_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = client_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CCE9252C2F0ABC00D456B4 /* client_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = client_swiftApp.swift; sourceTree = "<group>"; };
 		F8CCE9272C2F0ABC00D456B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,9 +86,6 @@
 		F8CCE9192C2F0ABC00D456B4 = {
 			isa = PBXGroup;
 			children = (
-				F89B2F372C340C32002BA1FA /* LibraryApp.swift */,
-				F89B2F352C340BFD002BA1FA /* LibraryViewModel.swift */,
-				F8B0229F2C32BEA2003E4235 /* ContentView.swift */,
 				F8CCE9BD2C319C6200D456B4 /* client-swift-Info.plist */,
 				F8CCE95C2C2FDAF400D456B4 /* main.swift */,
 				F8CCE95A2C2F134900D456B4 /* library_client.swift */,
@@ -177,6 +168,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F8B007542C35547000E15580 /* PBXTargetDependency */,
 			);
 			name = client_swift;
 			packageProductDependencies = (
@@ -299,11 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F89B2F362C340BFD002BA1FA /* LibraryViewModel.swift in Sources */,
-				F89B2F382C340C32002BA1FA /* LibraryApp.swift in Sources */,
 				F8CCE95B2C2F134900D456B4 /* library_client.swift in Sources */,
 				F8CCE95D2C2FDAF400D456B4 /* main.swift in Sources */,
-				F8B022A02C32BEA2003E4235 /* ContentView.swift in Sources */,
 				F8CCE9582C2F112700D456B4 /* library.grpc.swift in Sources */,
 				F8CCE9522C2F0D2E00D456B4 /* grpc_client.swift in Sources */,
 				F8CCE9592C2F112700D456B4 /* library.pb.swift in Sources */,
@@ -330,6 +319,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F8B007542C35547000E15580 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F8B007532C35547000E15580 /* GRPC */;
+		};
 		F8CCE9352C2F0ABE00D456B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F8CCE9212C2F0ABC00D456B4 /* client_swift */;
@@ -640,6 +633,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F8B007532C35547000E15580 /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8CCE9502C2F0BDD00D456B4 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
 		F8CCE9542C2F0E3400D456B4 /* GRPC */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F8CCE9502C2F0BDD00D456B4 /* XCRemoteSwiftPackageReference "grpc-swift" */;

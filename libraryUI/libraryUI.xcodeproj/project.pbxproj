@@ -14,6 +14,15 @@
 		F81A7A092C35017500AB0324 /* libraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A7A082C35017500AB0324 /* libraryUITests.swift */; };
 		F81A7A132C35017500AB0324 /* libraryUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A7A122C35017500AB0324 /* libraryUIUITests.swift */; };
 		F81A7A152C35017500AB0324 /* libraryUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A7A142C35017500AB0324 /* libraryUIUITestsLaunchTests.swift */; };
+		F81A7A222C35023000AB0324 /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A7A212C35023000AB0324 /* BookList.swift */; };
+		F81A7A242C35026700AB0324 /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A7A232C35026700AB0324 /* BookDetail.swift */; };
+		F81A7A262C35029500AB0324 /* AddBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81A7A252C35029500AB0324 /* AddBook.swift */; };
+		F8B007582C3563F100E15580 /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = F8B007572C3563F100E15580 /* GRPC */; };
+		F8B007602C3564D200E15580 /* library_client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B0075B2C3564D200E15580 /* library_client.swift */; };
+		F8B007612C3564D200E15580 /* client-swift-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8B0075C2C3564D200E15580 /* client-swift-Info.plist */; };
+		F8B007622C3564D200E15580 /* library.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B0075D2C3564D200E15580 /* library.grpc.swift */; };
+		F8B007632C3564D200E15580 /* library.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B0075E2C3564D200E15580 /* library.pb.swift */; };
+		F8B007662C35653700E15580 /* GRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B007652C35653700E15580 /* GRPC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,14 @@
 		F81A7A0E2C35017500AB0324 /* libraryUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libraryUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81A7A122C35017500AB0324 /* libraryUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libraryUIUITests.swift; sourceTree = "<group>"; };
 		F81A7A142C35017500AB0324 /* libraryUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libraryUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F81A7A212C35023000AB0324 /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
+		F81A7A232C35026700AB0324 /* BookDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
+		F81A7A252C35029500AB0324 /* AddBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBook.swift; sourceTree = "<group>"; };
+		F8B0075B2C3564D200E15580 /* library_client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = library_client.swift; path = ../../client_swift/library_client.swift; sourceTree = "<group>"; };
+		F8B0075C2C3564D200E15580 /* client-swift-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "client-swift-Info.plist"; path = "../../client_swift/client-swift-Info.plist"; sourceTree = "<group>"; };
+		F8B0075D2C3564D200E15580 /* library.grpc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = library.grpc.swift; path = ../../client_swift/library.grpc.swift; sourceTree = "<group>"; };
+		F8B0075E2C3564D200E15580 /* library.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = library.pb.swift; path = ../../client_swift/library.pb.swift; sourceTree = "<group>"; };
+		F8B007652C35653700E15580 /* GRPC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GRPC.swift; path = ../../client_swift/GRPC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B007582C3563F100E15580 /* GRPC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				F81A7A072C35017500AB0324 /* libraryUITests */,
 				F81A7A112C35017500AB0324 /* libraryUIUITests */,
 				F81A79F52C35017400AB0324 /* Products */,
+				F8B007562C3563F100E15580 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +113,18 @@
 		F81A79F62C35017400AB0324 /* libraryUI */ = {
 			isa = PBXGroup;
 			children = (
+				F8B007652C35653700E15580 /* GRPC.swift */,
+				F8B0075C2C3564D200E15580 /* client-swift-Info.plist */,
+				F8B0075B2C3564D200E15580 /* library_client.swift */,
+				F8B0075D2C3564D200E15580 /* library.grpc.swift */,
+				F8B0075E2C3564D200E15580 /* library.pb.swift */,
 				F81A79F72C35017400AB0324 /* libraryUIApp.swift */,
 				F81A79F92C35017400AB0324 /* ContentView.swift */,
 				F81A79FB2C35017500AB0324 /* Assets.xcassets */,
 				F81A79FD2C35017500AB0324 /* Preview Content */,
+				F81A7A232C35026700AB0324 /* BookDetail.swift */,
+				F81A7A212C35023000AB0324 /* BookList.swift */,
+				F81A7A252C35029500AB0324 /* AddBook.swift */,
 			);
 			path = libraryUI;
 			sourceTree = "<group>";
@@ -127,6 +154,13 @@
 			path = libraryUIUITests;
 			sourceTree = "<group>";
 		};
+		F8B007562C3563F100E15580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,8 +175,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				F8B0075A2C3563F700E15580 /* PBXTargetDependency */,
 			);
 			name = libraryUI;
+			packageProductDependencies = (
+				F8B007572C3563F100E15580 /* GRPC */,
+			);
 			productName = libraryUI;
 			productReference = F81A79F42C35017400AB0324 /* libraryUI.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +253,9 @@
 				Base,
 			);
 			mainGroup = F81A79EB2C35017400AB0324;
+			packageReferences = (
+				F8B007552C3563D000E15580 /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
 			productRefGroup = F81A79F52C35017400AB0324 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F81A79FF2C35017500AB0324 /* Preview Assets.xcassets in Resources */,
+				F8B007612C3564D200E15580 /* client-swift-Info.plist in Resources */,
 				F81A79FC2C35017500AB0324 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +299,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B007632C3564D200E15580 /* library.pb.swift in Sources */,
+				F8B007622C3564D200E15580 /* library.grpc.swift in Sources */,
+				F8B007662C35653700E15580 /* GRPC.swift in Sources */,
+				F8B007602C3564D200E15580 /* library_client.swift in Sources */,
+				F81A7A222C35023000AB0324 /* BookList.swift in Sources */,
+				F81A7A242C35026700AB0324 /* BookDetail.swift in Sources */,
 				F81A79FA2C35017400AB0324 /* ContentView.swift in Sources */,
 				F81A79F82C35017400AB0324 /* libraryUIApp.swift in Sources */,
+				F81A7A262C35029500AB0324 /* AddBook.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +340,10 @@
 			isa = PBXTargetDependency;
 			target = F81A79F32C35017400AB0324 /* libraryUI */;
 			targetProxy = F81A7A0F2C35017500AB0324 /* PBXContainerItemProxy */;
+		};
+		F8B0075A2C3563F700E15580 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = F8B007592C3563F700E15580 /* GRPC */;
 		};
 /* End PBXTargetDependency section */
 
@@ -582,6 +635,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8B007552C3563D000E15580 /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8B007572C3563F100E15580 /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8B007552C3563D000E15580 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
+		F8B007592C3563F700E15580 /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8B007552C3563D000E15580 /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F81A79EC2C35017400AB0324 /* Project object */;
 }

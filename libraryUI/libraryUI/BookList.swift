@@ -7,12 +7,36 @@
 
 import SwiftUI
 
-struct BookList: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct Book: Identifiable {
+    let id = UUID()
+    let title: String
+    let author: String
 }
 
-#Preview {
-    BookList()
+struct BookList: View {
+    @State private var books: [Book] = [
+        Book(title: "1984", author: "George Orwell"),
+        Book(title: "To Kill a Mockingbird", author: "Harper Lee")
+    ]
+    
+    var body: some View {
+        NavigationView {
+            List(books) { book in
+                NavigationLink(destination: BookDetail(book: book)) {
+                    VStack(alignment: .leading) {
+                        Text(book.title).font(.headline)
+                        Text(book.author).font(.subheadline)
+                    }
+                }
+            }
+            .navigationTitle("Library")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: AddBook(books: $books)) {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+        }
+    }
 }

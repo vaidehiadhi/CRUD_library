@@ -9,6 +9,13 @@ import SwiftUI
 
 @main
 struct libraryUIApp: App {
+    init() {
+      
+        GRPCDemo.runClientDemo {
+            print("GRPC Demo completed")
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
